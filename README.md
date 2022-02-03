@@ -1,4 +1,4 @@
-#laradock-lite
+# laradock-lite
 Ambiente de desenvolvimento local laravel baseado em Docker
 
 # Prefácio
