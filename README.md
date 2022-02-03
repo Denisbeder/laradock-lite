@@ -47,4 +47,4 @@ Observando cada imagem em docker-compose.yml, você pode ver todos os componente
 5. pesquisa elástica 5.3.2 (nome de usuário e senha padrão do XPack elastic/changeme)
 
 # Pontos não cobertos
-Para projetos front-end, como React.js + webpack, é recomendado temporariamente usar npm ou yarn para instalar dependências de desenvolvimento localmente, consulte [create-react-app](https://github.com/facebookincubator/ create-react-app) Início rápido.
+Para projetos front-end, como React.js + webpack, é recomendado temporariamente usar npm ou yarn para instalar dependências de desenvolvimento localmente, consulte [create-react-app](https://github.com/facebookincubator/create-react-app) Início rápido.
