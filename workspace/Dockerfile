@@ -14,6 +14,8 @@ RUN apk del build-base autoconf
 
 RUN rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
+RUN mkdir -p ~/.local/share/psysh
+
 RUN wget http://psysh.org/manual/en/php_manual.sqlite -O ~/.local/share/psysh/php_manual.sqlite
 
 WORKDIR /var/www
