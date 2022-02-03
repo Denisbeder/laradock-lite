@@ -38,7 +38,7 @@ espaço de trabalho do docker-compose exec /bin/ash
 php artesão migrar: atualizar
 ```
 
-# componentes
+# Componentes
 Observando cada imagem em docker-compose.yml, você pode ver todos os componentes, onde cada componente é executado em seu próprio contêiner, ou seja, um componente por contêiner
 1. nginx 1.12
 2. php-fpm é baseado em php8.1
@@ -46,5 +46,5 @@ Observando cada imagem em docker-compose.yml, você pode ver todos os componente
 4. redis 3.2
 5. pesquisa elástica 5.3.2 (nome de usuário e senha padrão do XPack elastic/changeme)
 
-# pontos não cobertos
+# Pontos não cobertos
 Para projetos front-end, como React.js + webpack, é recomendado temporariamente usar npm ou yarn para instalar dependências de desenvolvimento localmente, consulte [create-react-app](https://github.com/facebookincubator/ create-react-app) Início rápido.
