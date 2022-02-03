@@ -1,14 +1,10 @@
-FROM php:7.1.11-alpine
-
-MAINTAINER Liu Yang <yangliul@gmail.com>
-
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories
+FROM php:8.1.2-fpm-alpine
 
 RUN apk update --no-cache \
     && apk upgrade --no-cache \
-    && apk add --no-cache build-base autoconf libmcrypt-dev
+    && apk add --no-cache build-base autoconf
 
-RUN docker-php-ext-install pdo_mysql mcrypt
+RUN docker-php-ext-install pdo_mysql
 
 RUN pecl install -o -f redis xdebug \
     && rm -rf /tmp/pear \

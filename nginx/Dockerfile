@@ -1,7 +1,5 @@
 FROM nginx:1.12.2-alpine
 
-MAINTAINER Liu Yang <yangliul@gmail.com>
-
 ADD nginx.conf /etc/nginx/
 
 RUN adduser -D -H -u 1000  www-data \
