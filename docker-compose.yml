@@ -34,6 +34,10 @@ services:
     #image: laradocklite/workspace:latest
     build:
       context: ./workspace
+      args:
+        - PHP_VERSION=${PHP_VERSION}
+        - PUID=${WORKSPACE_PUID}
+        - PGID=${WORKSPACE_PGID}
     restart: unless-stopped
     volumes_from:
       - applications
@@ -51,6 +55,8 @@ services:
     #image: laradocklite/php-fpm:latest
     build:
       context: ./php-fpm
+      args:
+        - PHP_VERSION=${PHP_VERSION}
     restart: unless-stopped
     volumes_from:
       - applications
@@ -76,6 +82,8 @@ services:
     #image: laradocklite/php-worker:latest
     build:
       context: ./php-worker
+      args:
+        - PHP_VERSION=${PHP_VERSION}
     restart: unless-stopped
     volumes_from:
       - applications
